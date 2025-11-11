@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const { program } = require('commander');
-const { version } = require('../package.json');
-const genDiff = require('..');
+const { program } = require('commander')
+const { version } = require('../package.json')
+const genDiff = require('..')
 
 program
   .name('gendiff')
@@ -13,8 +13,8 @@ program
   .argument('<filepath1>')
   .argument('<filepath2>')
   .action((filepath1, filepath2, options) => {
-    const diff = genDiff(filepath1, filepath2, options.format);
-    console.log(diff);
-  });
+    const diff = genDiff(filepath1, filepath2, options.format)
+    console.log(diff)
+  })
 
-program.parse();
+program.parse()

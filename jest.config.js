@@ -4,4 +4,4 @@ module.exports = {
     'index.js',
     'src/**/*.js',
   ],
-};
+}
