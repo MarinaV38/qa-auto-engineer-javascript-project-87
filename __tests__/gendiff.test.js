@@ -3,8 +3,8 @@ const fs = require('fs')
 
 const genDiff = require('..')
 
-const getFixturePath = filename => path.join(__dirname, '..', '__fixtures__', filename)
-const readFixture = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
+const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename)
+const readFixture = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
 describe('genDiff', () => {
   const expectedStylish = readFixture('expected_stylish.txt').trim()

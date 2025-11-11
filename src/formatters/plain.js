@@ -1,4 +1,4 @@
-const stringify = value => {
+const stringify = (value) => {
   if (value === null) {
     return 'null'
   }
@@ -14,7 +14,7 @@ const stringify = value => {
   return String(value)
 }
 
-const formatPlain = diffTree => {
+const formatPlain = (diffTree) => {
   const lines = diffTree.reduce((acc, node) => {
     switch (node.type) {
       case 'removed':

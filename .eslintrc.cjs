@@ -7,7 +7,6 @@ module.exports = {
   extends: 'airbnb-base',
   rules: {
     'no-console': 'off',
-    semi: ['error', 'never'],
-    'arrow-parens': ['error', 'as-needed'],
+    'semi': ['error', 'never'],
   },
 }

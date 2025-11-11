@@ -4,7 +4,7 @@ const buildDiff = (data1, data2) => {
   const uniqueKeys = Array.from(new Set([...Object.keys(data1), ...Object.keys(data2)]))
   const sortedKeys = uniqueKeys.sort()
 
-  return sortedKeys.map(key => {
+  return sortedKeys.map((key) => {
     const value1 = data1[key]
     const value2 = data2[key]
 

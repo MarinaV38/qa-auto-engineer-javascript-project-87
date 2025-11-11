@@ -1,4 +1,4 @@
-const stringify = value => {
+const stringify = (value) => {
   if (value === null) {
     return 'null'
   }
@@ -12,8 +12,8 @@ const stringify = value => {
 
 const formatLine = (sign, key, value) => `  ${sign} ${key}: ${stringify(value)}`
 
-const formatStylish = diffTree => {
-  const lines = diffTree.flatMap(node => {
+const formatStylish = (diffTree) => {
+  const lines = diffTree.flatMap((node) => {
     switch (node.type) {
       case 'removed':
         return formatLine('-', node.key, node.value)
