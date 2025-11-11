@@ -8,5 +8,6 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'semi': ['error', 'never'],
+    'arrow-parens': 'off',
   },
 }
