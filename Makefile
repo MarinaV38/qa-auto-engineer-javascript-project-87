@@ -14,3 +14,6 @@ JSON:
 
 YAML:
 	node bin/gendiff.js __fixtures__/file1.yml __fixtures__/file2.yml
+
+PLAIN:
+	node bin/gendiff.js __fixtures__/file1.yml __fixtures__/file2.yml --format plain

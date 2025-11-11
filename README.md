@@ -10,7 +10,11 @@
 
 ## Пример использования YAML
 
-[![asciicast](https://asciinema.org/a/2WMneIlaXmiNXv2Sn1TI33ILN.svg)](https://asciinema.org/a/2WMneIlaXmiNXv2Sn1TI33ILN)
+[![asciicast](https://asciinema.org/a/4P2VHw3FkoUYS09wKUiEzVPjs.svg)](https://asciinema.org/a/4P2VHw3FkoUYS09wKUiEzVPjs)
+
+## Пример вывода в формате plain
+
+[![asciicast](https://asciinema.org/a/VY8kqXRh284J6Rtgu0x6NEeaa.svg)](https://asciinema.org/a/VY8kqXRh284J6Rtgu0x6NEeaa)
 
 ## Локальный запуск
 
