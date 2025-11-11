@@ -8,6 +8,10 @@
 
 [![asciicast](https://asciinema.org/a/2WMneIlaXmiNXv2Sn1TI33ILN.svg)](https://asciinema.org/a/2WMneIlaXmiNXv2Sn1TI33ILN)
 
+## Пример использования YAML
+
+[![asciicast](https://asciinema.org/a/2WMneIlaXmiNXv2Sn1TI33ILN.svg)](https://asciinema.org/a/2WMneIlaXmiNXv2Sn1TI33ILN)
+
 ## Локальный запуск
 
 ```bash
