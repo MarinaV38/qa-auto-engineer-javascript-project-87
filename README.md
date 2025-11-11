@@ -16,6 +16,10 @@
 
 [![asciicast](https://asciinema.org/a/VY8kqXRh284J6Rtgu0x6NEeaa.svg)](https://asciinema.org/a/VY8kqXRh284J6Rtgu0x6NEeaa)
 
+## Пример вывода в формате json
+
+[![asciicast](https://asciinema.org/a/PWq9AIw5XCMztC7JmpBGYl0O6.svg)](https://asciinema.org/a/PWq9AIw5XCMztC7JmpBGYl0O6)
+
 ## Локальный запуск
 
 ```bash

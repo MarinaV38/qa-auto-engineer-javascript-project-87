@@ -1,9 +1,11 @@
 const formatStylish = require('./stylish');
 const formatPlain = require('./plain');
+const formatJson = require('./json');
 
 const formattersMap = {
   stylish: formatStylish,
   plain: formatPlain,
+  json: formatJson,
 };
 
 const formatDiff = (diffTree, formatName = 'stylish') => {
