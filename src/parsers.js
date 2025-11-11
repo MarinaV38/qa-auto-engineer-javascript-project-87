@@ -18,7 +18,7 @@ const parseData = (data, format) => {
   }
 }
 
-const loadData = filepath => {
+const loadData = (filepath) => {
   const absolutePath = getAbsolutePath(filepath)
   const data = fs.readFileSync(absolutePath, 'utf-8')
   const format = getFormat(filepath)
