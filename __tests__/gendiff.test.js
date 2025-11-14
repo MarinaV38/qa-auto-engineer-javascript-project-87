@@ -11,25 +11,22 @@ describe('genDiff', () => {
   const expectedPlain = readFixture('expected_plain.txt').trim()
   const expectedJson = readFixture('expected_json.txt').trim()
 
-  test('returns stylish diff for flat json files', () => {
+  test('handles all formats for JSON files', () => {
     const filepath1 = getFixturePath('file1.json')
     const filepath2 = getFixturePath('file2.json')
 
     expect(genDiff(filepath1, filepath2)).toBe(expectedStylish)
-  })
-
-  test('supports explicit stylish format option', () => {
-    const filepath1 = getFixturePath('file1.json')
-    const filepath2 = getFixturePath('file2.json')
-
     expect(genDiff(filepath1, filepath2, 'stylish')).toBe(expectedStylish)
+    expect(genDiff(filepath1, filepath2, 'plain')).toBe(expectedPlain)
+    expect(genDiff(filepath1, filepath2, 'json')).toBe(expectedJson)
   })
 
-  test('handles yaml files', () => {
+  test('handles all formats for YAML files', () => {
     const filepath1 = getFixturePath('file1.yml')
     const filepath2 = getFixturePath('file2.yml')
 
     expect(genDiff(filepath1, filepath2)).toBe(expectedStylish)
+    expect(genDiff(filepath1, filepath2, 'stylish')).toBe(expectedStylish)
     expect(genDiff(filepath1, filepath2, 'plain')).toBe(expectedPlain)
     expect(genDiff(filepath1, filepath2, 'json')).toBe(expectedJson)
   })
