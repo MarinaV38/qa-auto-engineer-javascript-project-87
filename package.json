@@ -2,12 +2,13 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/MarinaV38/qa-auto-engineer-javascript-project-87/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MarinaV38/qa-auto-engineer-javascript-project-87/actions)",
+  "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --runInBand",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --runInBand",
     "lint": "eslint ."
   },
   "author": "",

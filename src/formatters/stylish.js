@@ -34,4 +34,4 @@ const formatStylish = (diffTree) => {
   return `{\n${lines.join('\n')}\n}`
 }
 
-module.exports = formatStylish
+export default formatStylish

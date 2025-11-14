@@ -1,4 +1,4 @@
-const yaml = require('js-yaml')
+import yaml from 'js-yaml'
 
 const parsersMap = {
   json: JSON.parse,
@@ -16,4 +16,4 @@ const parseData = (data, format) => {
   return parser(data)
 }
 
-module.exports = parseData
+export default parseData

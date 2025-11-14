@@ -36,4 +36,4 @@ const formatPlain = (diffTree) => {
   return lines.join('\n')
 }
 
-module.exports = formatPlain
+export default formatPlain

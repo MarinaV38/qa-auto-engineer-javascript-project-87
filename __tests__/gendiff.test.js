@@ -1,7 +1,11 @@
-const path = require('path')
-const fs = require('fs')
+import path from 'node:path'
+import fs from 'node:fs'
+import { fileURLToPath } from 'node:url'
 
-const genDiff = require('..')
+import genDiff from '../index.js'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const getFixturePath = filename => path.join(__dirname, '..', '__fixtures__', filename)
 const readFixture = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')

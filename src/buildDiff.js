@@ -27,4 +27,4 @@ const buildDiff = (data1, data2) => {
   })
 }
 
-module.exports = buildDiff
+export default buildDiff

@@ -1,6 +1,6 @@
-const formatStylish = require('./stylish')
-const formatPlain = require('./plain')
-const formatJson = require('./json')
+import formatStylish from './stylish.js'
+import formatPlain from './plain.js'
+import formatJson from './json.js'
 
 const formattersMap = {
   stylish: formatStylish,
@@ -18,4 +18,4 @@ const formatDiff = (diffTree, formatName = 'stylish') => {
   return formatter(diffTree)
 }
 
-module.exports = formatDiff
+export default formatDiff

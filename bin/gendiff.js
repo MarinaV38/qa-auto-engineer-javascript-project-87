@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
-const { program } = require('commander')
-const { version } = require('../package.json')
-const genDiff = require('..')
+import { readFileSync } from 'node:fs'
+import { program } from 'commander'
+
+import genDiff from '../index.js'
+
+const packageJsonPath = new URL('../package.json', import.meta.url)
+const { version } = JSON.parse(readFileSync(packageJsonPath, 'utf-8'))
 
 program
   .name('gendiff')
